@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import About from "./Routes/About";
 import Contact from "./Routes/Contact";
+import Home from "./Routes/Home";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route index element={<Home />} />
         </Route>
         <Route
           path="*"
@@ -21,7 +23,7 @@ ReactDOM.render(
               <p>There is nothing here!</p>
             </main>
           }
-          />
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
