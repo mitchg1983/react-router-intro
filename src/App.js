@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -9,7 +9,9 @@ function App() {
       <header className="App-header">
         <h1>React Router Intro</h1>
         <nav>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
     </div>
